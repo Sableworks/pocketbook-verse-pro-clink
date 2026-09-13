@@ -1,0 +1,8 @@
+build/
+.DS_Store
+*.o
+*.o.d
+*.app.pdb
+tests/host_smoke
+tests/_smoke_save
+tests/_smoke_scores
