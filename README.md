@@ -4,9 +4,15 @@ A match-3 game for the **PocketBook Verse Pro Color (B300 / Kaleido 3)**. Built 
 
 The on-device UI is in **English**.
 
+## Download
+
+**[Download the latest release](https://github.com/Sableworks/pocketbook-verse-pro-clink/releases/latest)** — ZIP with `clink.app`, ready for your PocketBook. No build tools required.
+
+(GitHub does not allow uploading bare `.app` files, so the binary ships inside a ZIP.)
+
 ## Install on device
 
-1. Build `clink.app` (see below) or copy a prebuilt binary.
+1. Download the ZIP from the [latest release](https://github.com/Sableworks/pocketbook-verse-pro-clink/releases/latest) and unzip it to get `clink.app`.
 2. Connect the PocketBook via USB (PC Link / mass storage).
 3. Copy `clink.app` to `applications/` on device storage (`/mnt/ext1/applications/`).
 4. **Disconnect USB** — with PC Link active, apps often cannot see files.
@@ -60,7 +66,9 @@ Stones use **color plus a unique shape** (circle, diamond, triangle, square, hex
 
 Cascades play in three beats: highlight, empty cells, then refill. The clock uses a small partial refresh so the panel is not fully redrawn every second.
 
-## Build from source
+## Build from source (optional)
+
+Only needed if you want to modify or rebuild the app. End users should use the [prebuilt release](https://github.com/Sableworks/pocketbook-verse-pro-clink/releases/latest).
 
 The Docker image includes the PocketBook ARM toolchain for **Verse Pro Color (B300)**.
 
